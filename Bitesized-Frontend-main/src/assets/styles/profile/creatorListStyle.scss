@@ -1,0 +1,124 @@
+.creator-wrapper {
+  .page-header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 880px;
+    height: 52px;
+    margin: 25px auto;
+    padding: 0px 10px;
+
+    .page-title {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #efa058;
+    }
+  }
+
+  .list-menu {
+    margin: 10px auto 20px auto;
+    padding: 0px 10px;
+    max-width: 880px;
+  }
+
+  .creator-list {
+    margin: 0px auto;
+    padding: 0px 20px;
+    max-width: 860px;
+
+    .sort-item {
+      margin: 0px auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .sort-letter {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #EFA058;
+      }
+
+      .item {
+        flex-grow: 0;
+        margin: 5px 12px;
+      }
+    }
+  }
+
+  .creators {
+    margin-top: 20px;
+
+    .creator {
+      margin: 15px auto;
+      padding: 0px 20px;
+      max-width: 850px;
+    }
+  }
+
+  .bites {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto 0px auto;
+
+    .bite {
+      margin: 10px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .creator-wrapper {
+    .bites {
+      max-width: 900px;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .creator-wrapper {
+    .bites {
+      max-width: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .creator-wrapper {
+    .bites {
+      max-width: 300px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 680px) {
+  .creator-wrapper {
+    .page-header {
+      margin: 15px auto;
+    }
+
+    .creator-list {
+      .sort-item {
+        .item {
+          margin: 5px 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+.admin-edit-bite-wrapper {
+    margin-bottom: 100px;
+
+    .page-header {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 52px;
+        margin: 25px 20px;
+        padding: 0px 10px;
+
+        .page-title {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #efa058;
+        }
+    }
+
+    .edit-bite {
+        .header-title {
+            display: flex;
+            justify-content: center;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 30px;
+            text-decoration-line: underline;
+            color: #000000;
+        }
+
+        .avatar-title {
+            margin: 30px 12% 40px 12%;
+
+            .left-time {
+                margin-bottom: 10px;
+                margin-left: 10px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 18px;
+                letter-spacing: 0.02em;
+                display: flex;
+                align-items: center;
+                color: #de5a67;
+            }
+
+            .avatar {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+
+                .bite-category {
+                    margin-left: 20px;
+                    padding: 10px;
+                    width: fit-content;
+                    height: fit-content;
+                    background: #efa058;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-align: center;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .bite-title {
+                margin-left: 15px;
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                color: #54504e;
+            }
+        }
+
+        .edit-title {
+            margin: 0px 15% 15px 15%;
+        }
+
+        .edit-category {
+            h4 {
+                margin-bottom: 15px;
+            }
+            margin: 0px 15% 50px 15%;
+        }
+
+        .edit-video {
+            margin: 50px auto 0px auto;
+            max-width: 880px;
+            padding: 0px 30px;
+
+            .bite-videos {
+                display: flex;
+                justify-content: space-evenly;
+                position: relative;
+
+                .bite-video {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    width: 240px;
+                    height: 460px;
+                    box-shadow: 4.78698px 9.57396px 23.9349px rgba(0, 0, 0, 0.15);
+
+                    .bite-main-part {
+                        width: 100%;
+                        height: 100%;
+
+                        .bite-part {
+                            position: relative;
+                            margin: 25px auto 0px auto;
+                            width: 220px;
+                            height: 391px;
+
+                            .cover-image {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                background-color: #d9d9d9;
+                            }
+
+                            .play-icon {
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                                top: 50%;
+                                left: 50%;
+                                z-index: 1;
+                                cursor: pointer;
+                                width: 40px;
+                                height: 40px;
+                                background: #efa058;
+                                border-radius: 40px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &:hover {
+                                    background: #f2b176;
+                                }
+                            }
+
+                            .react-player {
+                                width: 100% !important;
+                                height: 100% !important;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                overflow: hidden;
+
+                                video {
+                                    height: 100% !important;
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .add-icon {
+                        width: 40px;
+                        height: 40px;
+                        background: #efa058;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .remove-icon {
+                        top: -20px;
+                        right: -20px;
+                        position: absolute;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        background: #d94e27;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .view-icon {
+                        top: -20px;
+                        right: 30px;
+                        position: absolute;
+                        cursor: pointer;
+                        width: 40px;
+                        height: 40px;
+                        background: #7e7875;
+                        border-radius: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .action-buttons {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .scroll-bar {
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: rgba(245, 195, 149, 0.1);
+                border-radius: 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: rgba(245, 195, 149, 0.5);
+                border-radius: 10px;
+                transition: 0.2s;
+                height: 8px;
+
+                &:hover {
+                    background: #efa058;
+                }
+            }
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 0.25px solid #e1e0df;
+        }
+
+        .transaction-history {
+            max-width: 650px;
+            margin: 20px auto;
+
+            .data-table {
+                height: 290px;
+                overflow: auto;
+
+                table {
+                    box-sizing: border-box;
+                    width: 100%;
+
+                    thead {
+                        z-index: 20;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 0.005em;
+                        color: #000000;
+                        height: 40px;
+                        background-color: #f2b176;
+                        position: sticky;
+                        top: 0;
+
+                        tr {
+                            text-align: left;
+                            position: sticky;
+                            top: 0;
+
+                            th {
+                                position: sticky;
+                                top: 0;
+                                padding-left: 5px;
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+
+                    tbody {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 0.005em;
+                        color: #000000;
+
+                        tr {
+                            text-align: left;
+                            height: 50px;
+                            cursor: pointer;
+
+                            td {
+                                padding-left: 5px;
+                                padding-right: 5px;
+                            }
+
+                            &:hover {
+                                background-color: rgb(240, 240, 240);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

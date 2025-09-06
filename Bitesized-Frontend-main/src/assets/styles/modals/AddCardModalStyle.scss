@@ -1,0 +1,210 @@
+.modal {
+    z-index: 50;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+
+    &.show {
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+    #addcard {
+        .modal-content {
+            box-sizing: border-box;
+            width: 275px;
+            background-color: #FFFFFF;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            padding: 10px;
+
+            .modal-header {
+                padding: 5px;
+                display: flex;
+                justify-content: space-between;
+
+                .close-btn {
+                    cursor: pointer;
+                }
+            }
+
+            .modal-body {
+                .header-card-title {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 20px;
+                    color: #000000;
+                    margin-bottom: 20px;
+                }
+
+                .card-types {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .letter {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+
+                    .card-type {
+                        display: flex;
+                        align-items: center;
+
+                        .card {
+                            margin: 0px 5px;
+                        }
+                    }
+                }
+
+                .card-number {
+                    margin: 5px auto 20px auto;
+
+                    .StripeElement {
+                        border: 1px solid #E1E0DF;
+                        border-radius: 15px;
+                        background-color: #E1E0DF;
+                        padding-left: 20px;
+                    }
+                }
+
+                .card-holder-name {
+                    .letter {
+                        font-family: 'Lato';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+
+                    .holder-name {
+                        font-weight: 400;
+                        margin-top: 5px;
+                        width: 100%;
+                        height: 42px;
+                        background-color: #E1E0DF;
+                        border: 1px solid #E1E0DF;
+                        border-radius: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        input {
+                            width: 220px;
+                            padding: 10px 0px;
+                            border: none;
+                            background-color: #E1E0DF;
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #54504E;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+
+                .expire-cvv {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    .expire {
+                        width: 45%;
+
+                        .letter {
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #000000;
+                        }
+
+                        .expire-ele {
+                            margin-top: 5px;
+
+                            .StripeElement {
+                                width: 90%;
+                                border: 1px solid #E1E0DF;
+                                border-radius: 15px;
+                                background-color: #E1E0DF;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+
+                    .cvv {
+                        width: 45%;
+
+                        .letter {
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #000000;
+                        }
+
+                        .cvv-ele {
+                            margin-top: 5px;
+
+                            .StripeElement {
+                                width: 90%;
+                                border: 1px solid #E1E0DF;
+                                border-radius: 15px;
+                                background-color: #E1E0DF;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .check-box {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    padding: 0px 10px;
+
+                    .checkbox {
+                        display: flex;
+                        justify-content: center;
+
+                        .letter {
+                            margin-left: 5px;
+                            display: flex;
+                            max-width: 200px;
+                            align-items: center;
+                            text-align: center;
+                            font-family: 'Lato';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

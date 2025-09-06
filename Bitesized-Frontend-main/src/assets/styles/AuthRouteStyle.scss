@@ -1,0 +1,112 @@
+//-----------------COLOR---------------------
+// PRIMARY
+$primary-color-level5: #EFA058;
+// NUETRAL
+$nuetral-color-level5: #A6A29F;
+$nuetral-color-level6: #7e7875;
+$nuetral-color-level8: #54504E;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato" !important;
+}
+
+h1 {
+    font-style: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h2 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h3 {
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+h4 {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h5 {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h6 {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.color {
+    &-primary {
+        &-level5 {
+            color: $primary-color-level5;
+        }
+    }
+
+    &-nuetral {
+        &-level5 {
+            color: $nuetral-color-level5;
+        }
+        &-level6 {
+            color: $nuetral-color-level6;
+        }
+        &-level8 {
+            color: $nuetral-color-level8;
+        }
+    }
+}
+
+.bold {
+    &-sm {
+        font-weight: 600;
+    }
+    &-md {
+        font-weight: 700;
+    }
+    &-lg {
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    h4 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    h5 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
